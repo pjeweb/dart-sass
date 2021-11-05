@@ -611,7 +611,8 @@ class _SerializeVisitor
     _writeBetween<Value>(
         _inspect
             ? value.asList
-            : value.asList.where((element) => !element.isBlank),
+            : value.asList
+                .where((element) => element.hasBrackets || !element.isBlank),
         _separatorString(value.separator),
         _inspect
             ? (element) {

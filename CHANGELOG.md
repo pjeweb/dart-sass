@@ -1,3 +1,8 @@
+## 1.43.5
+
+* **Potentially breaking bug fix:** Fix a bug where `inspect()` was not
+  properly printing nested, empty, bracketed lists.
+
 ## 1.43.4
 
 ### JS API
