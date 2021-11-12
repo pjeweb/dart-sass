@@ -28,7 +28,7 @@ void main() {
 
     test("has a useful .constructor.name", () {
       expect(parseValue<NodeSassBoolean>("true").constructor.name,
-          equals("SassBoolean"));
+          equals("sass.SassBoolean"));
     });
   });
 
@@ -46,7 +46,8 @@ void main() {
     });
 
     test("has a useful .constructor.name", () {
-      expect(sass.types.Boolean.FALSE.constructor.name, equals("SassBoolean"));
+      expect(sass.types.Boolean.FALSE.constructor.name,
+          equals("sass.SassBoolean"));
     });
   });
 
